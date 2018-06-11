@@ -69,7 +69,6 @@
 
 html {
   font-family: sans-serif;
-  line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
@@ -89,10 +88,9 @@ body {
   font-family: 'robotoregular', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 15px;
   font-weight: 400;
-  line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: #f4f6f5;
 }
 
 [tabindex="-1"]:focus {
@@ -134,8 +132,11 @@ address {
 ol,
 ul,
 dl {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style: none;
 }
 
 ol ol,
@@ -235,6 +236,7 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
+  max-width: 100%;
 }
 
 svg:not(:root) {
