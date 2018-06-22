@@ -230,6 +230,14 @@
     color: #fff;
     background-color: #e74c3c;
 }
+.default-title{
+    font-family: 'robotobold';
+    font-size: 2.4rem;
+    color: #263238;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 55px;
+}
 /* Default component end */
 /* Custom styles */
 .top-header {
@@ -663,20 +671,20 @@
 }
 /* button and social network end */
 /* product tabs start*/
-.tab-pane {
+.content-wrapper .tab-pane {
     display: none;
     padding: 35px 35px 65px 35px;
 }
-.tab-pane.show {
+.content-wrapper .tab-pane.show {
     display: block;
 }
-.nav-item {
+.content-wrapper .nav-item {
     flex-grow: 1;
 }
-.nav-item + .nav-item {
+.content-wrapper .nav-item + .nav-item {
     border-left: 1px solid #dfdfdf;
 }
-.nav-link {
+.content-wrapper .nav-link {
     font-family: 'robotomedium';
     font-size: 1.0666rem;
     color: #70838d;
@@ -686,10 +694,10 @@
     border-bottom: 1px solid #dfdfdf;
     position: relative;
 }
-.nav-link.active{
+.content-wrapper .nav-link.active{
     color: #263238;
 }
-.nav-link::after {
+.content-wrapper .nav-link::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -698,23 +706,23 @@
     height: 0;
     transition: all .2s ease-in;
 }
-.nav-link.active::after {
+.content-wrapper .nav-link.active::after {
     height: 3px;
     background-color: #8bc34a;
 }
-.tab-content .item-list{
+.content-wrapper .tab-content .item-list{
     display: inline-block;
     vertical-align: top;
 }
-.tab-content .item-list + .item-list{
+.content-wrapper .tab-content .item-list + .item-list{
     margin-left: 35px;
 }
-.tab-content .item-list li a{
+.content-wrapper .tab-content .item-list li a{
     font-size: 1.0333rem;
     color: #707070;
     line-height: 2.4rem;
 }
-.tab-content .item-list li a i{
+.content-wrapper .tab-content .item-list li a i{
     margin-right: 13px;
     color: #8bc34a;
 }
@@ -759,3 +767,201 @@
 }
 /* more product end */
 /* product-details.html end */
+/* main-home.html start */
+/* inner start */
+.inner.big-inner {
+    padding-top: 155px;
+    padding-bottom: 175px;
+    background: url("../img/small-inner-bg.jpg") no-repeat center / cover;
+}
+.inner.big-inner .inner-title{
+    font-family: 'robotobold';
+    font-size: 3.2rem;
+    color: #fff;
+    line-height: 1;
+}
+.inner.big-inner .inner-subtitle{
+    font-family: 'robotomedium';
+    font-size: 1.3333rem;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 55px;
+    line-height: 1;
+}
+/* inner end */
+/* products card start*/
+.main-home-wrapper .nav{
+    margin-bottom: 30px;
+}
+.main-home-wrapper .tab-pane {
+    display: none;
+    padding: 0 30px;
+    margin: auto;
+    max-width: 1910px;
+}
+.main-home-wrapper .tab-pane.show {
+    display: block;
+}
+.main-home-wrapper .nav-item {
+    display: inline-block;
+}
+.main-home-wrapper .nav-item + .nav-item {
+    margin-left: 6px;
+}
+.main-home-wrapper .nav-link {
+    font-family: 'robotomedium';
+    font-size: 0.93333rem;
+    line-height: 37px;
+    color: #263238;
+    padding: 0 20px;
+    display: inline-block;
+    background-color: #fff;
+    transition: all .2s ease-in;
+}
+.main-home-wrapper .nav-link.active{
+    color: #fff;
+    background-color: #e74c3c;
+    box-shadow: 0 2px 5px 0 rgba(202, 215, 228, 0.75);
+}
+.card-wrap{
+    margin: 0 -15px;
+}
+.main-home-wrapper .card{
+    flex-basis: 440px;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.main-home-wrapper .nav-items{
+    margin-top: 75px;
+    padding-bottom: 100px;
+}
+.main-home-wrapper .nav-items a{
+    display: inline-block;
+    font-size: 1.0666rem;
+    color: #263238;
+    line-height: 52px;
+    padding: 0 32px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(204, 216, 225, .75)
+}
+.main-home-wrapper .nav-items a + a{
+    margin-left: 10px;
+}
+/* products card end*/
+/* trending products carousel start */
+.trending-products-carousel{
+    padding: 0 30px;
+    margin: auto;
+    max-width: 1910px;
+    margin-top: -30px;
+}
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+    margin-bottom: 120px;
+}
+.slick-dots li{
+    display: inline-block;
+}
+.slick-dots li button{
+    color: transparent;
+    background-color: #e8e8e8;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    outline: none;
+}
+.slick-dots li + li{
+    margin-left: 7px;
+}
+.slick-dots li.slick-active button{
+    background-color: #8bc34a;
+}
+/* trending products carousel start */
+/* why you shoose foxtar start */
+.why-you-choose{
+    padding-bottom: 115px;
+}
+.why-you-choose .default-title{
+    color: #fff;
+    padding-bottom: 85px;
+}
+.why-you-choose .img-wrap img{
+    width: 113px;
+    height: 113px;
+}
+.why-you-choose .title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: 'robotomedium';
+    font-size: 1.6rem;
+    color: #fff;
+    display: block;
+}
+.why-you-choose .title.green{
+    color: #8bc34a;
+}
+.why-you-choose p{
+    font-size: 1rem;
+    color: #b0bec5;
+    line-height: 1.6rem;
+    max-width: 91%;
+    margin: auto;
+}
+/* why you shoose foxtar end */
+/* advertisement start */
+.advertisement{
+    padding-top: 130px;
+    padding-bottom: 137px;
+}
+.advertisement .img-wrap{
+    position: relative;
+}
+.advertisement .img-wrap img{
+    box-shadow: 0 0 30px 5px rgba(181, 181, 181, 0.5);
+}
+.advertisement .banner{
+    position: absolute;
+    height: 215px;
+    width: 655px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.advertisement .banner span{
+    font-family: 'robotomedium';
+    font-size: 2rem;
+    color: #fff;
+    width: 280px;
+}
+.advertisement .banner span span{
+    font-family: 'robotobold';
+    display: inline;
+}
+.advertisement .banner .banner-btn{
+    background-color: #fff;
+    font-size: 1.2rem;
+    color: #263238;
+    line-height: 65px;
+    padding: 0 40px;
+    margin-left: 45px;
+}
+/* advertisement end */
+/* free tutorials start*/
+.free-tutorials{
+    padding-bottom: 120px;
+}
+.free-tutorials .title-wrap{
+    background-color: #f8f8f8;
+}
+.free-tutorials .title-wrap span{
+    font-family: 'robotobold';
+    font-size: 1.6rem;
+    color: #263238;
+    line-height: 100px;
+}
+/* free tutorials end*/
+/* main-home.html end */
+
