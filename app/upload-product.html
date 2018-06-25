@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>product details</title>
+    <title>upload product</title>
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">    
     <!-- Bootstrap reboot -->
@@ -14,6 +14,11 @@
     <!-- RangeSlider -->
     <link rel="stylesheet" href="css/ion.rangeSlider.css">
     <link rel="stylesheet" href="css/ion.rangeSlider.skinNice.css">
+    <!-- Sprite style -->
+    <link rel="stylesheet" href="css/sprite.css">
+    <!-- jQuery form styler -->
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -242,262 +247,151 @@
         <div class="content-wrapper">
             <div class="container">
                 <ul class="breadcrumb">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">WordPress</a></li>
-                    <li class="active">GT Builder Construction</li>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="active">Product page</li>
                 </ul>
-                <div class="row">
-                    <div class="col-md-9">
-                        <div class="product-info-wrap">
-                            <div class="product-baner bg-white border-grey">
-                                <img src="img/product-banner-img.jpg" alt="">
-                            </div>
-                            <!-- /.product-baner -->
-                            <div class="product-description">
-                                <h5>GTBuilder - Construction & Building WordPress Theme</h5>
-                                <p>Bmply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived noning essentially unchanged. </p>
-                            </div>
-                            <!-- /.product-description -->
-                            <div class="btn-wrap d-flex">
-                                <a href="#" class="product-details-btn bg-candy">Live Preview</a>
-                                <a href="#" class="product-details-btn bg-slate-gray">Screenshots</a>
-                                <a href="#" class="product-details-btn bg-green">Documentation</a>
-
-                                <nav class="product-social ml-auto">
-                                    <a href="#" class="bg-medium-slate-blue"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#" class="bg-corn-flower-blue"><i class="fab fa-twitter"></i></a>
-                                    <a href="#" class="bg-royal-blue"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="#" class="bg-lipstick"><i class="fab fa-pinterest-p"></i></a>
-                                </nav>
-                                <!-- /.product-social -->
-                            </div>
-                            <div class="product-tabs bg-white border-grey">
-                                <ul class="nav nav-tabs d-flex" id="myTab" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" id="item-features-tab" data-toggle="tab" href="#item-features" role="tab" aria-controls="item-features" aria-selected="true">Item Features</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="comments-tab" data-toggle="tab" href="#comments" role="tab" aria-controls="comments" aria-selected="false">Comments</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Reviews</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="support-tab" data-toggle="tab" href="#support" role="tab" aria-controls="support" aria-selected="false">Support</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade active show" id="item-features" role="tabpanel" aria-labelledby="item-features-tab">
-                                        <ul class="item-list">
-                                            <li><a href="#"> <i class="fas fa-chevron-right"></i>Printing and typesetting industry</a></li>
-                                            <li><a href="#"> <i class="fas fa-chevron-right"></i>Bhen an unknown printe</a></li>
-                                            <li><a href="#"> <i class="fas fa-chevron-right"></i>Handard dummy text</a></li>
-                                            <li><a href="#"> <i class="fas fa-chevron-right"></i>Desktop publishing software</a></li>
-                                            <li><a href="#"> <i class="fas fa-chevron-right"></i>Bhen an unknown printe</a></li>                  
-                                        </ul>
-                                        <ul class="item-list">
-                                            <li><a href="#"> <i class="fas fa-chevron-right"></i>Printing and typesetting industry</a></li>
-                                            <li><a href="#"> <i class="fas fa-chevron-right"></i>Bhen an unknown printe</a></li>
-                                            <li><a href="#"> <i class="fas fa-chevron-right"></i>Handard dummy text</a></li>                 
-                                        </ul>
-                                    </div>
-                                    <div class="tab-pane fade" id="comments" role="tabpanel" aria-labelledby="comments-tab">
-                                        <ul class="item-list">
-                                            <li><a href="#"> <i class="fas fa-chevron-right"></i>Printing and typesetting industry</a></li>
-                                            <li><a href="#"> <i class="fas fa-chevron-right"></i>Bhen an unknown printe</a></li>
-                                            <li><a href="#"> <i class="fas fa-chevron-right"></i>Handard dummy text</a></li>
-                                            <li><a href="#"> <i class="fas fa-chevron-right"></i>Desktop publishing software</a></li>
-                                            <li><a href="#"> <i class="fas fa-chevron-right"></i>Bhen an unknown printe</a></li>                  
-                                        </ul>
-                                    </div>
-                                    <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
-                                        <ul class="item-list">
-                                            <li><a href="#"> <i class="fas fa-chevron-right"></i>Printing and typesetting industry</a></li>
-                                            <li><a href="#"> <i class="fas fa-chevron-right"></i>Bhen an unknown printe</a></li>
-                                            <li><a href="#"> <i class="fas fa-chevron-right"></i>Handard dummy text</a></li>
-                                            <li><a href="#"> <i class="fas fa-chevron-right"></i>Desktop publishing software</a></li>
-                                            <li><a href="#"> <i class="fas fa-chevron-right"></i>Bhen an unknown printe</a></li>                  
-                                        </ul>
-                                        <ul class="item-list">
-                                            <li><a href="#"> <i class="fas fa-chevron-right"></i>Printing and typesetting industry</a></li>
-                                            <li><a href="#"> <i class="fas fa-chevron-right"></i>Bhen an unknown printe</a></li>
-                                            <li><a href="#"> <i class="fas fa-chevron-right"></i>Handard dummy text</a></li>                 
-                                        </ul>
-                                    </div>
-                                    <div class="tab-pane fade" id="support" role="tabpanel" aria-labelledby="support-tab">
-                                        <ul class="item-list">
-                                            <li><a href="#"> <i class="fas fa-chevron-right"></i>Printing and typesetting industry</a></li>
-                                            <li><a href="#"> <i class="fas fa-chevron-right"></i>Bhen an unknown printe</a></li>
-                                            <li><a href="#"> <i class="fas fa-chevron-right"></i>Handard dummy text</a></li>
-                                            <li><a href="#"> <i class="fas fa-chevron-right"></i>Desktop publishing software</a></li>
-                                            <li><a href="#"> <i class="fas fa-chevron-right"></i>Bhen an unknown printe</a></li>                  
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="more-product-title-wrap border-grey bg-white">
-                                <h6>More Product by PsdBosS</h6>
-                            </div>
-                            <!-- /.more-product-title -->
+                <div class="upload-product-content bg-white border-grey">
+                    <form>
+                        <h3 class="head-title">Upload Your item</h3>
+                        <div class="form-body">
                             <div class="row">
-                                <div class="col-lg-4">
-                                    <a href="#" class="card bg-white d-flex">
-                                        <div class="card-item-avatar">
-                                            <img src="img/product-details-card-avatar.png" alt="">
-                                        </div>    
-                                        <div class="card-desc">
-                                            <span href="#" class="card-title">Grand Ballet - Dance</span>
-                                            <span class="card-category">PSD Template</span>
-                                            <span class="card-price">$12</span>
-                                        </div>
-                                        <!-- /.card-desc -->
-                                    </a>
-                                    <!-- /.card -->
+                                <div class="col-3">
+                                    <label for="category">Select Categories <sup>*</sup></label>
                                 </div>
-                                <!-- /.col-lg-4 -->
-                                <div class="col-lg-4">
-                                    <a href="#" class="card bg-white d-flex">
-                                        <div class="card-item-avatar">
-                                            <img src="img/product-details-card-avatar.png" alt="">
-                                        </div>    
-                                        <div class="card-desc">
-                                            <span href="#" class="card-title">Grand Ballet - Dance</span>
-                                            <span class="card-category">PSD Template</span>
-                                            <span class="card-price">$12</span>
-                                        </div>
-                                        <!-- /.card-desc -->
-                                    </a>
-                                    <!-- /.card -->
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <select name="category" id="category" class="select-styler" data-placeholder="Select">
+                                        <option value=""></option>
+                                        <option value="">Category 1</option>
+                                        <option value="">Category 2</option>
+                                    </select>
                                 </div>
-                                <!-- /.col-lg-4 -->
-                                <div class="col-lg-4">
-                                    <a href="#" class="card bg-white d-flex">
-                                        <div class="card-item-avatar">
-                                            <img src="img/product-details-card-avatar.png" alt="">
-                                        </div>    
-                                        <div class="card-desc">
-                                            <span href="#" class="card-title">Grand Ballet - Dance</span>
-                                            <span class="card-category">PSD Template</span>
-                                            <span class="card-price">$12</span>
-                                        </div>
-                                        <!-- /.card-desc -->
-                                    </a>
-                                    <!-- /.card -->
+                                <!-- /.col-9 -->
+                            </div>
+                            <!-- /.row -->
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="product-name">Product Name <sup>*</sup></label>
                                 </div>
-                                <!-- /.col-lg-4 -->
-                                <div class="col-lg-4">
-                                    <a href="#" class="card bg-white d-flex">
-                                        <div class="card-item-avatar">
-                                            <img src="img/product-details-card-avatar.png" alt="">
-                                        </div>    
-                                        <div class="card-desc">
-                                            <span href="#" class="card-title">Grand Ballet - Dance</span>
-                                            <span class="card-category">PSD Template</span>
-                                            <span class="card-price">$12</span>
-                                        </div>
-                                        <!-- /.card-desc -->
-                                    </a>
-                                    <!-- /.card -->
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <input type="text" class="form-control" id="product-name" name="product-name" placeholder="Enter your product name here ...">
                                 </div>
-                                <!-- /.col-lg-4 -->
-                                <div class="col-lg-4">
-                                    <a href="#" class="card bg-white d-flex">
-                                        <div class="card-item-avatar">
-                                            <img src="img/product-details-card-avatar.png" alt="">
-                                        </div>    
-                                        <div class="card-desc">
-                                            <span href="#" class="card-title">Grand Ballet - Dance</span>
-                                            <span class="card-category">PSD Template</span>
-                                            <span class="card-price">$12</span>
-                                        </div>
-                                        <!-- /.card-desc -->
-                                    </a>
-                                    <!-- /.card -->
+                                <!-- /.col-9 -->
+                            </div>
+                            <!-- /.row -->
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="product-desc">Product Description <sup>*</sup></label>
                                 </div>
-                                <!-- /.col-lg-4 -->
-                                <div class="col-lg-4">
-                                    <a href="#" class="card bg-white d-flex">
-                                        <div class="card-item-avatar">
-                                            <img src="img/product-details-card-avatar.png" alt="">
-                                        </div>    
-                                        <div class="card-desc">
-                                            <span href="#" class="card-title">Grand Ballet - Dance</span>
-                                            <span class="card-category">PSD Template</span>
-                                            <span class="card-price">$12</span>
-                                        </div>
-                                        <!-- /.card-desc -->
-                                    </a>
-                                    <!-- /.card -->
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <textarea class="form-control" name="product-desc" id="product-desc" placeholder="<h1> Type your text  here </h1>"></textarea>
                                 </div>
-                                <!-- /.col-lg-4 -->
+                                <!-- /.col-9 -->
+                            </div>
+                            <!-- /.row -->
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="main-file">Upload Main File <sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <input type="file" class="input-file-styler" id="main-file" name="main-file" data-browse="Choose File" data-placeholder="No File Choosen">
+                                </div>
+                                <!-- /.col-9 -->
+                            </div>
+                            <!-- /.row -->
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="upload-screenshots">Upload Screenshots <sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <input type="file" class="input-file-styler" id="upload-screenshots" name="upload-screenshots" data-browse="Choose File" data-placeholder="No File Choosen">
+                                </div>
+                                <!-- /.col-9 -->
+                            </div>
+                            <!-- /.row -->
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="file-type">File Included <sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <select name="file-type" id="file-type" class="select-styler" data-placeholder="Select File Type">
+                                        <option value=""></option>
+                                        <option value="">Type 1</option>
+                                        <option value="">Type 2</option>
+                                    </select>
+                                </div>
+                                <!-- /.col-9 -->
+                            </div>
+                            <!-- /.row -->
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="file-dimensions">File Dimensions <sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <input type="text" class="form-control" id="file-dimensions" name="file-dimensions" placeholder="Enter the item  dimentionss here ...">
+                                </div>
+                                <!-- /.col-9 -->
+                            </div>
+                            <!-- /.row -->
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="item-tags">Item Tags <sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <input type="text" class="form-control" id="item-tags" name="item-tags" placeholder="item-tags">
+                                </div>
+                                <!-- /.col-9 -->
                             </div>
                             <!-- /.row -->
                         </div>
-                        <!-- /.product-info-wrap -->
-                    </div>
-                    <!-- /.col-md-9 -->
-                    <div class="col-md-3">
-                        <div class="aside-section bg-white border-grey">
-                            <h3 class="aside-title">Product Price</h3>
-                            <div class="price-wrap d-flex justify-content-between align-items-center">
-                                <span class="price">59$</span>
-                                    <a class="type-of-price-btn" href="#" role="button" id="dropdownTypeOfPrice" data-toggle="dropdown">
-                                    Ragular
-                                    <i class="fas fa-caret-down"></i>
-                                    </a>                                 
-                                    <div class="dropdown-menu" aria-labelledby="dropdownTypeOfPrice">
-                                        <ul class="type-of-price-list">
-                                            <li><a class="dropdown-item" href="#">Half-price</a></li>
-                                            <li><a class="dropdown-item" href="#">Sales</a></li>
-                                            <li><a class="dropdown-item" href="#">Premium</a></li>
-                                        </ul>
-                                    </div>
-                            </div>
-                            <!-- /.price-wrap -->
-                            <a href="#" class="product-btn bg-green"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-                            <a href="#" class="product-btn bg-dodger-blue"><i class="far fa-heart"></i> Add To Favourites</a>
-                            <a href="#" class="product-btn bg-denim"> Buy Now</a>
-                        </div>
-                        <!-- /.aside-section -->
-                        <div class="aside-section bg-white border-grey">
-                            <h3 class="aside-title">Product Author</h3>
-                            <div class="product-author-info d-flex">
-                                <img src="img/author-avatar.png" alt="" class="author-logo">
-                                <div class="product-author-wrap d-flex flex-column justify-content-between">
-                                    <span class="product-author-name">PsdBoss</span>
-                                    <a href="#" class="view-profile">View Profile</a>
+                        <!-- /.form-body -->
+                        <h3 class="head-title">Set Your Price (US$)</h3>
+                        <div class="form-body">
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="regular-license">Regular License <sup>*</sup></label>
                                 </div>
-                                <!-- /.product-author-wrap -->
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <input type="text" class="form-control" id="regular-license" name="regular-license" placeholder="$00.00">
+                                </div>
+                                <!-- /.col-9 -->
                             </div>
-                            <!-- /.product-author-info -->
-                        </div>
-                        <!-- /.aside-section -->
-                        <div class="aside-section small-pad bg-white border-grey">
-                            <div class="count-sales">
-                                <i class="fas fa-shopping-cart"></i>
-                                <span class="count-product">05</span>
-                                <span class="count-product-title">Sales</span>
+                            <!-- /.row -->
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="extended-license">Extended License <sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <input type="text" class="form-control" id="extended-license" name="extended-license" placeholder="$00.00">
+                                </div>
+                                <!-- /.col-9 -->
                             </div>
+                            <!-- /.row -->
+                            <div class="row">
+                                <div class="col-8 offset-md-3">
+                                    <button type="submit" class="bg-green">Submit</button>
+                                </div>
+                                <!-- /.col-8 -->
+                            </div>
+                            <!-- /.row -->       
                         </div>
-                        <!-- /.aside-section -->
-                        <div class="aside-section bg-white border-grey">
-                            <h3 class="aside-title">Product Information</h3>
-                            <ul class="product-info-list">
-                                <li>Released On: <span>1 January, 2016</span></li>
-                                <li>Last Update: <span>20 April, 2016</span></li>
-                                <li>Download: <span>613</span></li>
-                                <li>Version: <span>1.1</span></li>
-                                <li>Compatibility: <span>Wordpress 4+</span></li>
-                                <li>Compatible Browsers: <span>IE9, IE10, IE11, Firefox, Safari, Opera, Chrome</span></li>
-                            </ul>
-                        </div>
-                        <!-- /.aside-section -->
-                    </div>
-                    <!-- /.col-md-3 -->
+                        <!-- /.form-body -->
+                    </form>
                 </div>
-                <!-- /.row -->
+                <!-- /.upload-product-content -->
             </div>
-            <!-- /.container -->
+            <!--/.container  -->
         </div>
         <!-- /.content-wrapper -->
     </main>
@@ -581,6 +475,8 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- RangeSlider -->
     <script src="js/ion.rangeSlider.min.js"></script>
+    <!-- jQuery form styler -->
+    <script src="js/jquery.formstyler.min.js"></script>
     <!-- init plugins -->
     <script src="js/init.js"></script>
 </body>

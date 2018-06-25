@@ -193,7 +193,7 @@ sub {
 }
 
 sup {
-  top: -.5em;
+  top: 0;
 }
 
 a {
@@ -364,7 +364,7 @@ progress {
 }
 
 [type="search"] {
-  outline-offset: -2px;
+  outline: none;
   -webkit-appearance: none;
 }
 

@@ -22,4 +22,8 @@
             autoplaySpeed: 3000
         });
     }
+    // Init jquery form stayler
+    if ($('.form-control, .input-file-styler').length) {
+        $('.form-control, .input-file-styler').styler();
+    }
 })(jQuery);
