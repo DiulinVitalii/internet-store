@@ -1,4 +1,4 @@
-;(function($){
+; (function ($) {
     //init ion range slider
     if ($('#price-range').length) {
         $("#price-range").ionRangeSlider({
@@ -10,8 +10,8 @@
             to: 800,
             prefix: "$",
             hide_min_max: true
-    });
-}
+        });
+    }
     //init slick slider
     if ($('.trending-products-carousel').length) {
         $('.trending-products-carousel').slick({
@@ -19,11 +19,44 @@
             nextArrow: false,
             prevArrow: false,
             autoplay: true,
-            autoplaySpeed: 3000
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            infinite: true,
+            autoplaySpeed: 3000,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
         });
     }
     // Init jquery form stayler
-    if ($('.form-control, .input-file-styler').length) {
-        $('.form-control, .input-file-styler').styler();
+    if ($('.select-styler, .input-file-styler').length) {
+        $('.select-styler, .input-file-styler').styler();
+    }
+    //slicknav
+    if ($(".header-nav").length) {
+        $('.header-nav').slicknav({
+            appendTo: '.bottom-header .container',
+            label: ''
+        });
     }
 })(jQuery);

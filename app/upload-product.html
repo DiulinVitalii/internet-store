@@ -19,12 +19,14 @@
     <!-- jQuery form styler -->
     <link rel="stylesheet" href="css/jquery.formstyler.css">
     <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <!-- Slicknav style -->
+    <link rel="stylesheet" href="css/slicknav.css">
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header id="header" class="bg-white">
-        <div class="top-header container d-flex align-items-center bg-white">
+        <div class="top-header container d-flex align-items-center bg-white flex-wrap">
             <div class="logo">
                 <a href="index.html">
                     <img src="img/logo.png" alt="">
@@ -35,7 +37,7 @@
                 <span><span>Need help?</span> Talk to an expert: <a href="tel:+61383766284">+61 3 8376 6284</a></span>
             </div>
             <!-- /.need-help -->
-            <div class="user-controls d-flex align-items-center">
+            <div class="user-controls d-flex align-items-center justify-content-around justify-content-lg-start flex-wrap">
                 <div class="dropdown-item">
                     <div class="dropdown-control d-flex" id="dropdownMenuLink" data-toggle="dropdown">
                         <i class="far fa-bell mx-auto my-auto"></i>
@@ -183,24 +185,24 @@
                     </div>
                 </div>
                 <!-- /.dropdown-item -->
-                <div class="user-dropdown-control">
-                    <div class="dropdown d-flex align-items-center" id="dropdownMenuLink4" data-toggle="dropdown">
+                <div class="user-dropdown-control d-flex">
+                    <div class="dropdown d-flex align-items-center mx-auto" id="dropdownMenuLink4" data-toggle="dropdown">
                         <img src="img/user-avatar.png" alt="" class="user-avatar">
                         <div class="user-info-wrap">
                             <h6>Mike Hussy <i class="fas fa-chevron-down"></i></h6>
                             <span class="balance">$171.00</span>
                         </div>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink4">
-                           <ul class="dropdown-list">
-                               <li class="drodown-item"><a href="#"> <i class="fas fa-chevron-right"></i>Profile Page</a></li>
-                               <li class="drodown-item"><a href="#"> <i class="fas fa-chevron-right"></i>Portfolio</a></li>
-                               <li class="drodown-item"><a href="#"> <i class="fas fa-chevron-right"></i>Account Setting</a></li>
-                               <li class="drodown-item"><a href="#"> <i class="fas fa-chevron-right"></i>Downloads</a></li>
-                               <li class="drodown-item"><a href="#"> <i class="fas fa-chevron-right"></i>Wishlist</a></li>
-                               <li class="drodown-item"><a href="#"> <i class="fas fa-chevron-right"></i>Upload Item</a></li>
-                               <li class="drodown-item"><a href="#"> <i class="fas fa-chevron-right"></i>Statement</a></li>
-                               <li class="drodown-item"><a href="#"> <i class="fas fa-chevron-right"></i>Withdraws</a></li>                    
-                           </ul>
+                            <ul class="dropdown-list">
+                                <li class="drodown-item"><a href="#"> <i class="fas fa-chevron-right"></i>Profile Page</a></li>
+                                <li class="drodown-item"><a href="#"> <i class="fas fa-chevron-right"></i>Portfolio</a></li>
+                                <li class="drodown-item"><a href="#"> <i class="fas fa-chevron-right"></i>Account Setting</a></li>
+                                <li class="drodown-item"><a href="#"> <i class="fas fa-chevron-right"></i>Downloads</a></li>
+                                <li class="drodown-item"><a href="#"> <i class="fas fa-chevron-right"></i>Wishlist</a></li>
+                                <li class="drodown-item"><a href="#"> <i class="fas fa-chevron-right"></i>Upload Item</a></li>
+                                <li class="drodown-item"><a href="#"> <i class="fas fa-chevron-right"></i>Statement</a></li>
+                                <li class="drodown-item"><a href="#"> <i class="fas fa-chevron-right"></i>Withdraws</a></li>                    
+                            </ul>
                         </div>
                     </div>
                     <!-- /.dropdown-wrap -->                
@@ -257,11 +259,11 @@
                         <h3 class="head-title">Upload Your item</h3>
                         <div class="form-body">
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-12 col-md-3">
                                     <label for="category">Select Categories <sup>*</sup></label>
                                 </div>
                                 <!-- /.col-3 -->
-                                <div class="col-8">
+                                <div class="col-12 col-md-8">
                                     <select name="category" id="category" class="select-styler" data-placeholder="Select">
                                         <option value=""></option>
                                         <option value="">Category 1</option>
@@ -272,55 +274,55 @@
                             </div>
                             <!-- /.row -->
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-12 col-md-3">
                                     <label for="product-name">Product Name <sup>*</sup></label>
                                 </div>
                                 <!-- /.col-3 -->
-                                <div class="col-8">
+                                <div class="col-12 col-md-8">
                                     <input type="text" class="form-control" id="product-name" name="product-name" placeholder="Enter your product name here ...">
                                 </div>
                                 <!-- /.col-9 -->
                             </div>
                             <!-- /.row -->
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-12 col-md-3">
                                     <label for="product-desc">Product Description <sup>*</sup></label>
                                 </div>
                                 <!-- /.col-3 -->
-                                <div class="col-8">
+                                <div class="col-12 col-md-8">
                                     <textarea class="form-control" name="product-desc" id="product-desc" placeholder="<h1> Type your text  here </h1>"></textarea>
                                 </div>
                                 <!-- /.col-9 -->
                             </div>
                             <!-- /.row -->
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-12 col-md-3">
                                     <label for="main-file">Upload Main File <sup>*</sup></label>
                                 </div>
                                 <!-- /.col-3 -->
-                                <div class="col-8">
+                                <div class="col-12 col-md-8">
                                     <input type="file" class="input-file-styler" id="main-file" name="main-file" data-browse="Choose File" data-placeholder="No File Choosen">
                                 </div>
                                 <!-- /.col-9 -->
                             </div>
                             <!-- /.row -->
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-12 col-md-3">
                                     <label for="upload-screenshots">Upload Screenshots <sup>*</sup></label>
                                 </div>
                                 <!-- /.col-3 -->
-                                <div class="col-8">
+                                <div class="col-12 col-md-8">
                                     <input type="file" class="input-file-styler" id="upload-screenshots" name="upload-screenshots" data-browse="Choose File" data-placeholder="No File Choosen">
                                 </div>
                                 <!-- /.col-9 -->
                             </div>
                             <!-- /.row -->
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-12 col-md-3">
                                     <label for="file-type">File Included <sup>*</sup></label>
                                 </div>
                                 <!-- /.col-3 -->
-                                <div class="col-8">
+                                <div class="col-12 col-md-8">
                                     <select name="file-type" id="file-type" class="select-styler" data-placeholder="Select File Type">
                                         <option value=""></option>
                                         <option value="">Type 1</option>
@@ -331,22 +333,22 @@
                             </div>
                             <!-- /.row -->
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-12 col-md-3">
                                     <label for="file-dimensions">File Dimensions <sup>*</sup></label>
                                 </div>
                                 <!-- /.col-3 -->
-                                <div class="col-8">
+                                <div class="col-12 col-md-8">
                                     <input type="text" class="form-control" id="file-dimensions" name="file-dimensions" placeholder="Enter the item  dimentionss here ...">
                                 </div>
                                 <!-- /.col-9 -->
                             </div>
                             <!-- /.row -->
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-12 col-md-3">
                                     <label for="item-tags">Item Tags <sup>*</sup></label>
                                 </div>
                                 <!-- /.col-3 -->
-                                <div class="col-8">
+                                <div class="col-12 col-md-8">
                                     <input type="text" class="form-control" id="item-tags" name="item-tags" placeholder="item-tags">
                                 </div>
                                 <!-- /.col-9 -->
@@ -357,29 +359,29 @@
                         <h3 class="head-title">Set Your Price (US$)</h3>
                         <div class="form-body">
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-12 col-md-3">
                                     <label for="regular-license">Regular License <sup>*</sup></label>
                                 </div>
                                 <!-- /.col-3 -->
-                                <div class="col-8">
+                                <div class="col-12 col-md-8">
                                     <input type="text" class="form-control" id="regular-license" name="regular-license" placeholder="$00.00">
                                 </div>
                                 <!-- /.col-9 -->
                             </div>
                             <!-- /.row -->
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-12 col-md-3">
                                     <label for="extended-license">Extended License <sup>*</sup></label>
                                 </div>
                                 <!-- /.col-3 -->
-                                <div class="col-8">
+                                <div class="col-12 col-md-8">
                                     <input type="text" class="form-control" id="extended-license" name="extended-license" placeholder="$00.00">
                                 </div>
                                 <!-- /.col-9 -->
                             </div>
                             <!-- /.row -->
                             <div class="row">
-                                <div class="col-8 offset-md-3">
+                                <div class="col-12 offset-md-3">
                                     <button type="submit" class="bg-green">Submit</button>
                                 </div>
                                 <!-- /.col-8 -->
@@ -399,7 +401,7 @@
     <footer id="footer" class="bg-dark-blue">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-xl-3 col-sm-6">
                     <h5 class="footer-title">About Company</h5>
                     <p class="about-company">Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce sit amet urna iat.Praesent vel rutrum purus. </p>
                     <div class="address d-flex align-items-start">
@@ -414,7 +416,7 @@
                     <!-- /.phone-number -->                        
                 </div>
                 <!-- /.col-md-3 -->
-                <div class="col-md-3">
+                <div class="col-xl-3 col-sm-6">
                     <h5 class="footer-title">Join Our Community</h5>
                     <ul class="footer-list">
                         <li><a href="#"><i class="fas fa-chevron-right"></i>Home</a></li>
@@ -425,7 +427,7 @@
                     </ul>
                 </div>
                 <!-- /.col-md-3 -->
-                <div class="col-md-3">
+                <div class="col-xl-3 col-sm-6">
                     <h5 class="footer-title">Need Help?</h5>
                     <ul class="footer-list">
                         <li><a href="#"><i class="fas fa-chevron-right"></i>Help Center</a></li>
@@ -436,7 +438,7 @@
                     </ul>    
                 </div>
                 <!-- /.col-md-3 -->
-                <div class="col-md-3">
+                <div class="col-xl-3 col-sm-6">
                     <h5 class="footer-title">Follow Us On</h5>
                     <nav class="social-network d-flex">
                         <a href="#" class="icon icon-faceBook-ic"></a>
@@ -477,6 +479,8 @@
     <script src="js/ion.rangeSlider.min.js"></script>
     <!-- jQuery form styler -->
     <script src="js/jquery.formstyler.min.js"></script>
+    <!-- Slicknav-->
+    <script src="js/jquery.slicknav.min.js"></script>
     <!-- init plugins -->
     <script src="js/init.js"></script>
 </body>
