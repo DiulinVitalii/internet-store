@@ -38,31 +38,31 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   background-image: url(../img/sprite.png);
   background-position: 0px 0px;
   width: 34px;
-  height: 36px;
+  height: 37px;
 }
 .icon-product-2-ic {
   background-image: url(../img/sprite.png);
   background-position: -34px 0px;
   width: 34px;
-  height: 36px;
+  height: 37px;
 }
 .icon-product-3-ic {
   background-image: url(../img/sprite.png);
   background-position: -68px 0px;
   width: 34px;
-  height: 36px;
+  height: 37px;
 }
 .icon-product-4-ic {
   background-image: url(../img/sprite.png);
   background-position: 0px -37px;
   width: 34px;
-  height: 36px;
+  height: 37px;
 }
 .icon-product-5-ic {
   background-image: url(../img/sprite.png);
   background-position: -34px -37px;
   width: 34px;
-  height: 36px;
+  height: 37px;
 }
 .icon-twitter-ic {
   background-image: url(../img/sprite.png);
