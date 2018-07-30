@@ -66,9 +66,10 @@ gulp.task("js", function(){
     .pipe(rename("scripts.min.js"))
     .pipe(gulp.dest("app/js"))
 });
-gulp.task("watch", ["css", "cssmin", 'sprite', 'tinypng'], function(){
+gulp.task("watch", ["css", "cssmin", 'sprite', 'tinypng', 'js'], function(){
     gulp.watch("src/css/**/*.css", ["css"]); // ватчим за файлами в src/css
     gulp.watch("app/css/style.css", ["cssmin"]);
     gulp.watch('src/sprite/*.png', ["sprite"]);
     gulp.watch('src/img/*', ['tinypng']);
+    gulp.watch("app/js/main/**/*.js", ['js']);
 });
